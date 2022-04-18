@@ -1,0 +1,63 @@
+/*  JFM1T2_Assignment3:
+
+     Print the results for the following statements considering x = true and y = false
+             1. x&&y
+             2. x||y
+             3. !x
+             4. !y
+     Prompt the user input from the terminal.
+             
+     Sample Input:
+     Enter x as boolean value(true/false): 
+     true
+     Enter y as boolean value(true/false): 
+     false
+     
+     Expected Output:
+     x&&y is: false
+     x||y is: true
+     !x is: false
+     !y is: true
+
+*/
+
+//import statements for java program to read inputs using Scanner class
+import java.util.Scanner;
+
+class BooleanOperation {
+  public static void main(String args[])
+
+  
+//main method
+  {
+    boolean x,y;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter x as boolean value(true/fasle)");
+    x=sc.nextBoolean();
+    System.out.println("enter y as boolean value(true/fasle)");
+    
+    y=sc.nextBoolean();
+    
+  
+/*Use the scanner class to provide input at execution time using scanner object
+  Scanner sc=new Scanner(System.in);
+*/
+
+/*Take input from user
+  System.out.println("Enter x as boolean value(true/false): ");
+  boolean x=sc.nextBoolean();
+*/
+  
+  System.out.print("x&&y is : ");
+  System.out.println(x&&y);
+   System.out.print("x||y is : ");
+  System.out.println(x||y);
+   System.out.print("!x is : ");
+  System.out.println(!x);
+    System.out.print("!y is : ");
+  System.out.println(!y);
+
+
+//print apppropriate result for boolean operations
+    }
+}
